@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>Buyer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="fontawesome-free-5.10.2-web/css/all.css">
+        <link rel="stylesheet" href="css/products.css">
+        
+        
+    </head>
+
+    <body>
+      <div style='min-height: 100%;position:relative;padding:0px;'class='d-flex flex-column justify-content-center '>
+          <nav style='margin-bottom:20px;'class="navbar sticky-top navbar-expand-lg navbar-dark bg-light customNav">
+              <a class="navbar-brand brand" href="#">
+                  <img onclick="location.href='index.html';" src="images/LOGOB.png"></img></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>   
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav elements">
+                  <li onclick="location.href='index.html';" class="nav-item active">
+                    <a class="nav-link" href="#"> <p>Home</p> <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li onclick="location.href='AboutUs.html';"class="nav-item">
+                    <a class="nav-link" href="#"><p>About Us</p></a>
+                  </li>
+                  <li onclick="location.href='ContactUs.html';" class='nav-item'>
+                    <a class="nav-link" href="#"><p>Contact Us</p></a>
+                  </li>
+                  <li onclick="location.href='Login.html';" class="nav-item">
+                    <a class="nav-link" href="#"><p>Login/Register</p></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <br><br>
+            <div class="search">
+              <button id="click" onclick="myFunction()"><img class="searchimg" src="images/search.jpg" onclick="myFunction()"></button>
+              <input type="text" id="myInput"  placeholder="Search for products" title="Type in a name" >
+              <button class="cli" onclick="showall()" >Show All</button>
+            </div>
+
+            <div class="cardscontain">
+              <div class="notavail">
+                <h1>PRODUCT NOT AVAILABLE</h1>
+              </div>
+              <ul class="pro">
+                <li>  
+              <div class="card ">
+                <div class="prodimage">
+                  <img class=" imag" src="https://images.homedepot-static.com/productImages/797b0135-79ff-4196-9644-483ed8ca0a72/svn/paint-buckets-lids-rg580-12-64_1000.jpg " alt="product">
+            
+                </div>
+                <div class="description">
+                    <p class="good">::DRAFTER::</p> 
+                    <p style="font-size:12px;color:green;">PRICE</p>
+                </div>
+            </div>
+            </li>
+            <li>            
+              <div class=" card ">
+                <div class="prodimage">
+                  <img class="imag" src="https://media.gettyimages.com/photos/stack-of-books-picture-id157482029?s=612x612" alt="product">
+            
+                </div>
+                <div class="description">
+                    <p class="good">BOOKS</p> 
+                    <p style="font-size:12px;color:green;" >PRICE</p>
+                </div>
+            </div>
+            </li>
+            <li>
+            <div class=" card ">
+                <div class="prodimage">
+                  <img class="imag" src=" https://images-na.ssl-images-amazon.com/images/I/51AJ-iH1oNL._SL1100_.jpg" alt="product">
+            
+                </div>
+                <div class="description">
+                    <p class="good">DRAFTER</p> 
+                    <p style="font-size:12px;color:green;">%PRICE%</p>
+                </div>
+            </div>
+            </li>
+            <li>           
+               <div class=" card ">
+                <div class="prodimage">
+                  <img class="imag" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRybdcfgzF5GzKaAaUBIZ6I1ShLPDdSkP1jQrSjbi4qOE_3iG-oUA" alt="product">
+            
+                </div>
+                <div class="description">
+                    <p class="good">FOOTWEAR</p> 
+                    <p style="font-size:12px;color:green;">%PRICE%</p>
+                </div>
+            </div>
+            </li>
+            <li>
+            <div class=" card ">
+                <div class="prodimage">
+                  <img class="imag" src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1553012500-gallery-1506368644-agncxs-1553012494.png" alt="product">
+            
+                </div>
+                <div class="description">
+                    <p class="good">FAN</p> 
+                    <p style="font-size:12px;color:green;">%PRICE%</p>
+                </div>
+            </div>
+            </li>
+            <li>
+            <div class=" card ">
+                <div class="prodimage">
+                  <img class="imag" src="https://gbmedia.azureedge.net/aza/user/gear/1977-gibson-es-335-td-sunburst-1-VpTp3dj.jpg?height=250&width=250&crop=auto" alt="product">
+            
+                </div>
+                <div class="description">
+                    <p class="good">GUITAR</p> 
+                    <p style="font-size:12px;color:green;">%PRICE%</p>
+                </div>
+            </div>
+            </li>
+            <li>
+            <div class=" card ">
+                <div class="prodimage">
+                  <img class="imag" src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFlAj4mo3xRSYep2Qr1Tqp5p1UsRrVY2R-sIAZgdC1bbctGH0x" alt="product">
+            
+                </div>
+                <div class="description">
+                    <p class="good">LAPTOP</p> 
+                    <p style="font-size:12px;color:green;">%PRICE%</p>
+                </div>
+            </div>
+            </li>
+            <li>
+            <div class=" card ">
+                <div class="prodimage">
+                  <img class="imag" src="" alt="product">
+            
+                </div>
+                <div class="description">
+                    <p class="good">%NAME%</p> 
+                    <p style="font-size:12px;color:green;">%PRICE%</p>
+                </div>
+            </div>
+            </li>
+            <li>
+            <div class=" card ">
+                <div class="prodimage">
+                  <img class="imag" src=" " alt="product">
+            
+                </div>
+                <div class="description">
+                    <p>%NAME%</p> 
+                    <p style="font-size:12px;color:green;"  >%PRICE%</p>
+                </div>
+            </div>
+            </li>
+            <li>  
+                <div class="card ">
+                  <div class="prodimage">
+                    <img class=" imag" src="https://images.homedepot-static.com/productImages/797b0135-79ff-4196-9644-483ed8ca0a72/svn/paint-buckets-lids-rg580-12-64_1000.jpg " alt="product">
+              
+                  </div>
+                  <div class="description">
+                      <p class="good">DRAFTER</p> 
+                      <p style="font-size:12px;color:green;">PRICE</p>
+                  </div>
+              </div>
+              </li>
+              <li>  
+                  <div class="card ">
+                    <div class="prodimage">
+                      <img class=" imag" src="https://images.homedepot-static.com/productImages/797b0135-79ff-4196-9644-483ed8ca0a72/svn/paint-buckets-lids-rg580-12-64_1000.jpg " alt="product">
+                
+                    </div>
+                    <div class="description">
+                        <p class="good">DRAFTER</p> 
+                        <p style="font-size:12px;color:green;">PRICE</p>
+                    </div>
+                </div>
+                </li>
+                <li>  
+                    <div class="card ">
+                      <div class="prodimage">
+                        <img class=" imag" src="https://images.homedepot-static.com/productImages/797b0135-79ff-4196-9644-483ed8ca0a72/svn/paint-buckets-lids-rg580-12-64_1000.jpg " alt="product">
+                  
+                      </div>
+                      <div class="description">
+                          <p class="good">DRAFTER</p> 
+                          <p style="font-size:12px;color:green;">PRICE</p>
+                      </div>
+                  </div>
+                  </li>
+            </ul>
+            </div>
+
+                
+             
+
+
+            <div class="d-flex flex-column align-items-center bottom">
+              <div class = "d-flex flex-row justify-content-around align-items-center socials">
+                <i onclick="location.href = 'http://www.facebook.com';" class="fab fa-facebook"></i>
+                <i onclick="location.href = 'http://www.youtube.com';"class="fab fa-youtube"></i>
+                <i onclick="location.href = 'http://www.instagram.com';"class="fab fa-instagram"></i>
+                <i onclick="location.href = 'http://www.twitter.com';"class="fab fa-twitter"></i>
+              </div>
+              <hr class='break'/>
+              <p style='color:grey;font-size:0.7em;margin:10px;'>DEVELOPED BY CODE BENDERS</p>
+          </div>
+
+      </div>
+
+      <script type="text/javascript" src="js/search.js"></script>
+      <script type ='text/javascript' onload = 'loadUp()' src='js/buyer.js'> </script>
+  
+ 
+
+              
+                            
+  
+                
+    </body>
+</html>
